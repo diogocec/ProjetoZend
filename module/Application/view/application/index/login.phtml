@@ -1,0 +1,50 @@
+<div class="row">
+
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Cadastre-se</h3>
+            </div>
+            <div class="panel-body">
+                    <h1><?php echo sprintf($this->translate('BEM VINDO %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
+                <p>
+                    Nome: <br/>
+                    <input type="text" id="nome" name="nome" size="20"><br/><br/>
+                    Email: <br/>
+                    <input type="text" id="email" name="email"><br/><br/>
+                    Data de Nascimento:<br/>  
+                    <input type="text" id="dataNasc" name="dataNasc"><br/><br/> 
+                    Sexo:<br/>
+                    <input type="radio" name="chkSexoM"> Masculino &nbsp;
+                    <input type="radio" name="chkSexoF"> Feminino<br/><br/>                      
+                    Senha: <br/>
+                    <input type="password" id="senha" name="senha"><br/><br/>
+                    Confirmar Senha: <br/>
+                    <input type="password" id="confirmaSenha" name="confirmaSenha"><br/><br/>
+                    <input type="checkbox" id="chkAceito" name="chkAceito"> Li e Aceito o contrato                    
+
+                </p>
+                <p><a class="btn btn-success pull-right" href="http://modules.zendframework.com/" target="_blank">Cadastrar &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Login</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Email: <br/>
+                    <input type="text" id="usuario" name="usuario"><br/><br/>
+                    Senha: <br/>
+                    <input type="password" id="senha" name="senha">
+                </p>
+                <p><a class="btn btn-success pull-right" href="http://webchat.freenode.net?channels=zftalk" target="_blank">Entrar &raquo;</a></p>
+            </div>
+            <?php echo $promocao; ?>
+        </div>
+    </div>
+</div>
